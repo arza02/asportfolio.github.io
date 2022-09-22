@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+<title>arzasajid</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+<link rel="stylesheet" href="main.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+    
+}
+    div {
+  text-align: justify;
+  text-justify: inter-word;
+}
+   .container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+    img {
+  width: 100%;
+  height: auto;
+}
+   table, th, td {
+ border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  background-color: #96D4D4;
+}
+    .row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+    
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+    /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+    * {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column_1 {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+  
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button w3-hide-small">Nueva</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right ">
+      <a class="w3-bar-item w3-button" id="homebutton">Home</a>
+      <a class="w3-bar-item w3-button" id="myButton">Portfolio</a>
+    </div>
+  </div>
+</div>
+    
+<!-- Header --> 
+    <div class="w3-content" style="max-width:2000px;margin-top:46px">
+    <header class="bgimg w3-display-container" id="home">   
+    <div class="mySlides w3-display-container w3-center">
+    <img src="/nueva/bk.jpg" style="width:100%">
+    </div>
+    <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">Nueva</h1>
+    <h2 class="w3-hide-small">Second Hand Clothing Application Using Smart Mirror Technology</h2>
+    <ul style="list-style-type:none;" class="w3-hide-small">
+    <li> Elena Koftaylova</li>
+    <li> Jing Li</li>
+    <li>Xiang Li</li>
+    <li>Natalie Oganesyan</li>
+    <li>Arza Sajid</li>
+    </ul>
+    </div>
+    </header>
+    </div>
+
+
+
+<!-- Page content -->
+   <div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+    <div class="w3-container w3-padding-64" id="contact">
+    <div class="w3-col m6 w3-padding-large">
+    <img src="/nueva/nl.png" class="w3-round w3-image" alt="Table Setting" width="600" height="750">
+    </div>
+    <div class="w3-col m6 w3-padding-large">
+    <h1 class="w3-center" style="background-color:#88d2c3;">Introduction</h1><br>
+   <div><p class="w3-large">Due to the pandemic there has been a sharp increase in the amount of online shopping subsequently exacerbating the negative environmental impacts of fast fashion. Fast fashion is a phenomenon that in the coming years will continue to affect the clothing industry and the environment causing younger generations to find shopping alternatives due to growing exposure of the global textile industries polluting practices. Shifts in these shopping trends have exposed consumers to the ecological and financial benefits of buying and selling second hand clothes (SHC) but still requires modernisation to promote implementation. These inefficiencies combined with those in regular online shopping present opportunities to innovate online clothing resale (OCR) benefiting the user experience and the environment. In this paper respective solutions were explored combining an OCR app with emergent Smart Mirror technology. The Smart Mirror will allow users to get a realistic representation of style and sizing of SHC using AR and VR technology. The intention is to increase the efficiency of OCR to help manage proper expectations subsequently decreasing the number of items returned, preventing the negative environmental effects of shipping. We hope to combine the experience of a virtual fitting room while providing environmentally and financially conscious individuals an innovative platform promoting the exchange of unique items making one person's trash another person's treasure.</p></div>
+    </div>
+    </div>
+  
+  <hr>
+  
+<!-- Surveys -->
+      <div class="w3-container w3-padding-64">   
+      <div class="w3-row w3-padding-64" >
+      <h1 class="w3-center" style="background-color:#88d2c3;">Methodologies and Establishing requirements</h1><br>
+      <h3 style="background-color:rgba(136, 210, 195, 0.5);">Methodologies</h3>
+      <p class="w3-large">The main methodology used from the Interaction Design lifecycle model (Sharp et al., 2007) required phases of establishing requirements, designing alternatives, prototyping interfaces and evaluating results. These phases were followed in the prescribed order while tracking progress with the Gantt chart and Project plan created (see Appendix 1, 11). Principles from the User-Centered Approach and Lean UX were also considered and implemented (Gould and Lewis, 1985) including early focus on users and tasks, iterative design, and consistent feedback (Gothelf, 2013).</p>
+      <br><h3 style="background-color:rgba(136, 210, 195, 0.5);">Defined target users through secondary research</h3>
+      <p class="w3-large">In order to understand our prospective users, secondary research was conducted. Key findings regarding demographics information were: </p>
+     
+      <li class="w3-large">33% of female millennial respondents are likely to buy SHC (Thredup, 2019), women of age 18-37 are 70% of all women who bought SHC (Thredup, 2020) </li>
+      <li class="w3-large">20% of 18-34 aged people use fashion resale apps in the United Kingdom to sell their clothes (Field Marketing, 2019),</li>
+      <li class="w3-large">75% of French respondents were going to buy as much used clothes compared to last year (Harris Interactive, 2020) suggesting a substantial shift towards buying used clothes in France due to 44% of purchased secondhand products being clothes (Pollfish, Various sources, 2020). In Denmark, this percent is also quite high - 28% (Den Blå Avis, 2019)</li>
+      <li class="w3-large">Among key reasons to purchase used clothes are lower prices and better environmental options (CivicScience, 2020).</li>
+      <br>
+      <p class="w3-large">The main methodology used from the Interaction Design lifecycle model (Sharp et al., 2007) required phases of establishing requirements, designing alternatives, prototyping interfaces and evaluating results. These phases were followed in the prescribed order while tracking progress with the Gantt chart and Project plan created (see Appendix 1, 11). Principles from the User-Centered Approach and Lean UX were also considered and implemented (Gould and Lewis, 1985) including early focus on users and tasks, iterative design, and consistent feedback (Gothelf, 2013).</p>
+
+      <br><h3 style="background-color:rgba(136, 210, 195, 0.5);"><strong>Primary research: survey about perceptions to buy second-hand</strong></h3>
+      <p class="w3-large">Considering the primary function of NUEVA is to digitise second hand shopping, it was important to gain insight into our users' perceptions of SHC, their shopping styles and habits along with demographic information. This preliminary research was conducted through a 13 question survey and was completed by 24 participants. The intention behind this analysis was assessing the validity for such an app. Information regarding demographics, individual shopping habits, self perceived style, and second hand shopping preferences were needed to account for any necessary adjustments to NUEVA’s concept and proposed solution. An assessment of different cultural perspectives on SHC was also necessary given the results of our secondary research.</p>
+          
+      <br><h4 style="background-color:rgba(136, 210, 195, 0.5);"><strong>Primary research: Survey about perceptions to buy second-hand</strong></h4>
+      <p class="w3-large">A 13 question survey was conducted including preliminary research on people's perception towards fast fashion and SHC sales. Results of the 24 responses revealed:</p>
+      <li class="w3-large">Majority of users are females between the age of 18-34</li>
+      <li class="w3-large">In relation to users' shopping habits, the majority reported being either “Needs Based” shoppers or “Wandering” shoppers.</li>
+      <li class="w3-large">For responses regarding users' style expression the majority of responses were “minimalist”, “whatever fits” and “trend setter.”</li>
+      <li class="w3-large">The preferred mode of second hand shopping was in-store over online and when asked why, a large majority responded in favor of physically trying items on.</li>   
+      <li class="w3-large">When asked where people normally shop for SHC, 50% of users responded in-store</li>
+      <li class="w3-large">Majority of users responded that their motivations for buying second hand were due to the environmental benefits and cost effectiveness.</li>
+      <li class="w3-large">When asked what users dislike about second hand shopping responses were largely centered around the inability to find appropriate sizes and the disorganisation of stores. It is also important to note that although a provided survey response, users did not express any cultural conflicts with SHC.</li>
+      <li class="w3-large">Finally users were asked to give their views on second hand shopping which over 50% responded positively and over 40% responding neutrally.</li>    
+      <li class="w3-large">In order to elaborate on the last question, users were asked to provide reason for their response where the majority of users expressed some concern for the environmental consequences of fast fashion.</li>
+        
+      <br><h4 style="background-color:rgba(136, 210, 195, 0.5);"><strong>Survey of low-fidelity prototype</strong></h4>
+      <p class="w3-large">Results from the 18 responses for the low fidelity prototypes provide valuable insight into the desirable features and visualisations. Key finding concluded:</p>
+      <li class="w3-large">94% of participants prefer continuous scrolling up and down for the home page, later we implemented this format for home page and search results.</li>
+      <li class="w3-large">"Styles just for you" and "Sale items" are the most desired customised curations from clothing apps (72% and 78% respectively), so we added both features on the home screen. For recommendations, we consider using a machine learning regression model with self-learning for our app. This allows to create recommendations on customer’s data and predict their interests and likes (Yi and Liu, 2020).</li>
+      <li class="w3-large">Most users are happy to store their payment and personal information in the app (i.e. size dimensions). It is important to considering possible consequences of storing personal and financial details, requiring strong technology and policies to prevent any data leaks.</li>
+      <li class="w3-large">Key favorable features were compatibility for various screen sizes, easy filter options, and clear navigations ensuring that NUEVA included all these features. Later we tested four low-fidelity prototypes of home screen layouts where 8 out of 12 respondents favour the one presenting sale items, styles for you and popular within the same area of the screen.</li>   
+    
+    
+
+  <hr>
+          </div></div>
+    
+<!--personas-->
+   
+      <div class="w3-container w3-padding-64">
+      <div class="w3-row w3-padding-64">
+      <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center" style="background-color:#88d2c3;">Personas</h1><br>
+      <p class="w3-large">Based on literature reviews and primary research two key personas were created. Focusing on the female demographic each were represented in age groups Gen X and Millennials. Both personas are tech-savvy, like discounts, and environmentally conscious (Appendix 2). Taking into account our personas, their motivations and our business model with two roles we formulated the following user stories:</p>
+    
+      <li class="w3-large">As a buyer, I want to buy locally so I can easily access seller and quickly receive the items through pick up options.</li>
+      <li class="w3-large">As a buyer, I want to have a variety of second-hand clothing options nearby providing me with different styles, prices and sizes.</li>
+      <li class="w3-large">As a buyer, I want to virtually try on clothing so can get an accurate representation of style and fit relative to my body.</li>
+      <li class="w3-large" >As a seller, I want to have a convenient and technologically innovative app to resell my unused items so they sell quickly.</li>  
+      <li class="w3-large">As a seller, I want my potential buyers to have the ability to virtually try on my clothing so that I save time and energy required to ask questions regarding sizing and processing returns.</li>
+      <li class="w3-large" >As a seller, I want to be environmentally friendly reselling my used SHC while also benefiting monetarily and providing others the opportunity to reduce the waste and money associated with fast fashion.</li> 
+          
+      </div>
+      <div class="w3-col m6 w3-padding-large">
+      <img src="/nueva/persona.png" class="w3-round w3-image" alt="Table Setting" width="600" height="750">
+      </div>
+      </div>
+      </div>
+
+       
+<!-- logo & Colour testing-->
+    <div class="w3-container w3-padding-64">
+      <div class="w3-row w3-padding-64">
+      <div class="w3-col m6 w3-padding-large">
+      <img src="/nueva/logovariations.png" class="w3-round w3-image" alt="Table Setting" width="600" height="750">
+      </div>
+      <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center" style="background-color:#88d2c3;">Logo and Colour Testing</h1><br>
+      <div><p class="w3-large">Considering NUEVA’s dynamic functionality and colour preferences are incredibly subjective, information was needed to assure the app's widget and interface reflected associations of a brand that is both fashionable forward and environmentally conscious. Secondary research concluded that blue, green, yellow and purple were representative of associations with sustainability and fashion (Ward, 1995). To assess users preference of color a survey was conducted giving users four different color options of the same NUEVA app widget</p></div>
+      </div>
+      </div>
+      </div>
+      
+      
+      <hr>
+       
+<!-- Paper protoytyping testing -->
+      <div class="w3-container w3-padding-64" >
+      <div class="w3-row w3-padding-64" >
+      <h1 class="w3-center" style="background-color:#88d2c3;">Prototype path</h1><br> 
+      <div class="w3-row-padding w3-padding-16 w3-center">
+      
+      </div>
+      <ol>
+       <li class="w3-large" style="background-color:rgba(136, 210, 195, 0.5)"><strong>Login Page:</strong> The welcome page of NUEVA encourages users to input their login information with options to recover their password or sign up if they're a new member. In creating an account the next page gives users the option to manually login and sign up using credentials from their social media or Google accounts. There is also the option to login if they're already an existing user. We’ve also included an option to receive notifications and newsletter information.</li>
+          <br>
+      <li class="w3-large" style="background-color:rgba(136, 210, 195, 0.5)"><strong>a. For you:</strong> After inputting the users necessary information, the home screen home screen is presented defaulting to the “For you” section. This includes a “Sales and Offers” section for items the user has liked updating them on whether price reductions. As the user scrolls down the “For you” section they will notice other curated collections organised in “Popular Styles”, “Just for you”, and “Recently added.” At the bottom of the page there are also suggestions for popular closets from users with similar size and styling, displaying their follower count and providing a follow button. For each section there is a 6 small preview of the items with the option to expand each section with the “Show all” button.</li>
+          <br>
+      <li class="w3-large" style="background-color:rgba(136, 210, 195, 0.5)"><strong>b. Following:</strong> The left side of the home screen includes a following section which acts as a feed displaying new items posted from virtual closets the user follows. Similar to that of a social media feed the information presented includes the users name, their number of followers, and items posted with a product name, short description and price. Next, the user will select the orange dress to view more item details.</li>
+       <br>
+      <li class="w3-large" style="background-color:rgba(136, 210, 195, 0.5)"><strong>Item Page:</strong> There are a lot of important details to note about the items information page. Along with the seller's information and item details are icons encouraging user engagement. There is a heart icon to the bottom right of the item which acts as a “like” button while the star icon on the top right is a “save” button stored in the user's profile. Hearted items are represented similar to likes on social media and contribute to the algorithm that personally curates styles in relevant sections. The amount of likes an item has is also displayed next to the heart icon showing an item's popularity. Starred or saved items are followed, notifying the user of any price adjustments reflected in the “Sales and offers” section on the Home page as mentioned previously. This also gives the user the opportunity to separate items they like and wish to purchase. Along with information like price, product description, shipping options and sizing are the various buttons users can engage with. Starting with the most important is the mirror button. For items that are compatible with Smart Mirrors, the button will appear yellow indicating they are able to connect to it. For sellers without a Smart Mirror their items information page will display a grey mirror button indicating virtual fittings are not an option. There is also the ability to message the seller and buy the item directly. If the user continues scrolling there will be a curated section with similar and related items. For this example the user will select the star icon which will highlight yellow indicating it has been saved for later reference.</li>  
+          <br>
+      <li class="w3-large" style="background-color:rgba(136, 210, 195, 0.5)"><strong>Explore Page:</strong> The explore page of NUEVA displays our most revolutionary contribution to the second hand sales industry. This page gives users the option to search specific items and styles they may be looking for and searching items based on distance from the user's current location. The intention behind this was to give users the interface of online shopping while promoting the physical exchange of items creating a sense of community and reducing the amount of emissions associated with shipping. Also, if a 7 user is in desperate need of an item they have the option of picking it up the same day given the seller is available, creating an efficient and satisfactory user experience. The search bar is also a revolutionary function giving the user the ability to search specific styles or brands being that this type of information artificial intelligence (AI) gathers when a seller posts an item. One common but time consuming practice within the thrifting community is listing desired items or styles in their personal notes and hoping to come across them while shopping. NUEVA gives users the ability to search for an item, like black and white striped shirt for example, and see all the relevant options to be picked up or shipped.</li>
+          <br>
+      <li class="w3-large" style="background-color:rgba(136, 210, 195, 0.5)"><strong>Profile:</strong>After searching for items the user journey continues at the profile page titled “Me” on the navigation bar. The information on this page includes the users posted, liked and saved items as well as the options to connect to the users mirror, view previous orders, update card information, edit personal settings, edit profile settings and change their location. At the top of the page is the user's name accompanied by a photo. When selecting the saved section we can see the orange dress previously saved in the user journey stored here.</li> 
+          <br>
+      <li class="w3-large" style="background-color:rgba(136, 210, 195, 0.5)"><strong>Virtual fitting:</strong> After selecting the orange dress from the users saved section, the user intends to virtually try the item on. Being that the mirror button is yellow means the seller has provided the ability to use the Smart Mirror extension. After selecting the mirror button, an overlay pops up asking if the user would like to connect their app to their Smart Mirror with a secondary option to cancel. After selecting “connect with mirror” the interface transitions back to the items information page where the mirror button is now pink indicating the Smart Mirror has successfully connected. After selecting the pink mirror button the screen will transition to the virtual fitting, instructing the user to place their body in the Smart Mirrors bodily parameters. The item will then load on the user's reflection. During this time the phone's display will not sleep until the user is done with the virtual fitting and selects end virtual fitting.</li>
+          <br>
+      <li class="w3-large"style="background-color:rgba(136, 210, 195, 0.5)" ><strong>Additional Features:</strong> Many additional features of NUEVA were created with a deep exploration into the dynamism of our users' needs and awareness around the technological progressiveness of the Smart Mirror extension. Being that Smart Mirror technology is relatively new and still unreasonably priced to the average person, NUEVA has the ability to give highly accurate size recommendations using augmented reality (AR) technology 8 from dimensions scanned on the user's smartphone. During the account setup process the front facing camera will be used to scan dimensions of the users body with manual input of certain parameters supplementing any interferences from clothing worn during scanning or camera malfunctions. This process will also be required for people posting items to ensure accuracy in sizing recommendation. When the buyer selects an item the size will be given along with an AI sizing recommendations using the information input by both the buyer and seller. This feature is a proposed solution to address the most common problem with OCR which is inaccurate sizing and styling. This feature hopes to reduce the amount of returns making for a better UX for both the buyer and the seller. This will ultimately reduce pollution associated with the purchasing of fast fashion but also the waste of wearable clothing. There is also a social function of the app which was intentionally designed to mimic that of popular social media channels to ensure familiarity to our users and create a sense of community centered around clothing exchange. Another important feature to highlight is the profiles of Charity Organisations. Being that London has an extensive network of brick and mortar thrift stores, digitising their inventory would greatly increase their sales creating a business extension with philanthropic motivations. Although there are accessories displayed in the prototype it is still unclear what the logistics of this will look like in the Smart Mirror.</li>
+          </ol>
+      </div>
+      </div>
+
+  <hr>
+<!--User testing-->
+  <div class="w3-container w3-padding-64" >
+      <div class="w3-row w3-padding-64" >
+      <h1 class="w3-center" style="background-color:#88d2c3;">User Testing</h1><br> 
+      <div class="w3-row-padding w3-padding-64 w3-center">
+      <div class="w3-third w3-center ">   
+          
+      <h3 style="background-color:rgba(136, 210, 195, 0.5);" >Tree testing </h3>
+      <div>
+      <p class="w3-large" >Tree testing helped evaluate whether users found it difficult navigating the app. The following results helped us evaluate which task the ten participants found difficult. The median time to complete a task was 01:55. The longest times were 05:21 and the shortest was 01:00. Out of all tasks completed, 91% ended up with a "correct" answer, and out of which 62% of answers were chosen without backtracking. Five important tasks tested were the exploration of items, using filters, viewing users “followed closets”, using the Smart Mirror for virtual fitting and posting items to sell. The results show that all 5 tasks have great success, but the direct success of task 1 and 2 were low. The reason for the low directness of Task 1 may be that users are unfamiliar with the function "Followed Closets", as such functions are not very common in resale apps. Some users might not understand the meaning of "followed closets" and do not realise that it is on the home page, which leads to low direct success. The reason for the low direct success of Task 2 may have been due to the “Mirror” button as some users did not realize that the button was meant for virtual fitting through the Smart Mirror. Some users were stuck in searching for "Top Promotion", with 44% users first visiting the Explore page, rather than the Home page. Following these results “Followed Closet's” was changed to “Following”.</p>    
+      </div>
+      </div>
+          
+      <div class="w3-third w3-center">
+      <h3 style="background-color:rgba(136, 210, 195, 0.5);">Logo and colour testing</h3>
+      <div>      
+      <p class="w3-large">Among blue, yellow, purple and green, users responded green most resembling a resale app with equally favorable responses towards blue and purple. Concluding from both the primary and secondary research the decision was made to combine both green and blue giving the widget an integrative color representing both (Appendix 8). With consideration to the app's ethos and prospective marketing, a color association that most represented sustainability was favoured which directly coincided with results from secondary research (O'Connor, 2010). Green is also associated with feelings of friendliness and growth which expands on the social functions of the app (César Machado, Fonseca, and Martins, 2020). The color Turquoise was a compromise that represented the dynamism of NUEVA’s proposed solutions and functions.</p>
+      </div>
+      </div>
+          
+         
+      <div class="w3-third w3-center">
+      <h3 style="background-color:rgba(136, 210, 195, 0.5);">Low-fidelity prototype user testing</h3>
+      <div> 
+      <p class="w3-large">The low fidelity user testing was made using a maze website. The total number of participants were 19 for with a total number of the following three tasks: 1. View promotion items, and conduct a virtual fitting using the Smart Mirror. (Instructions: Log in, you want to view all the promotion items. You choose the first item and use Smart Mirror for virtual fitting.) a. 71% of mis-clicks on this page can be seen in Appendix 9. Most users clicked the first item on the page instead of clicking the “show all” button. 2. Add a new card for payment. (Instructions: You want to add a new credit card for your next payment.) a. The mis-click rate for this page was 50% which may have been due to the clickable area of ‘'Credit Card or Debit” being too small. Some users knew where to click however they clicked on the edge of the area that was invalid. 3. Post your second-hand item with the Smart Mirror. (Instructions: You want to sell one of your dresses, but you don’t want to type too many words to describe it, so you use your Smart Mirror to input your dress’s information.) 13 a. Every screen in this task has a good result. After these results the location of the “show all” button was changed and the clickable area for credit-card payment was increased.</p>      
+      </div>
+      </div>        
+      </div>
+      </div>
+      </div>
+
+          </div>
+        
+        
+<!-- app image-->
+    <div class="w3-container w3-padding-64" >
+    <div class="w3-row w3-padding-64" style="max-width:2000px;margin-top:46px">
+    <img src="/nueva/app.png" alt="Sandwich" style="max-width:2000px">
+    </div>
+    </div>
+          
+          
+
+<div class="w3-content" style="max-width:1500px">
+<!--Evaluation-->
+      <div class="w3-container w3-padding-64">
+      <div class="w3-row w3-padding-64">
+      <h1 class="w3-center" style="background-color:#88d2c3;">High fidelity Prototype</h1><br>
+      <div class="container w3-center">
+      <iframe class="responsive-iframe" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FznzUQVioXYZdvYRF2N1nmY%2Fsecond-hand-sale-app%3Fnode-id%3D567%253A4340%26starting-point-node-id%3D567%253A4298" allowfullscreen></iframe>
+      </div>
+      </div>
+      </div>
+       
+<!--Conclusion-->
+     <div class="w3-container w3-padding-64">
+
+    <div class="w3-row m6 w3-padding-large">
+    <h1 class="w3-center" style="background-color:#88d2c3;">Conclusion</h1><br>
+    <div>
+    <p class="w3-large w3-center">From both a business model and consumer standpoint, online clothing resale is a highly diverse sector with collaborative potential. Selling and buying used clothing is an environmentally friendly practice promoting the reduction in purchasing fast fashion. Used garments, on the other hand, have a lower environmental effect because they minimize CO2 pollution, pesticide use, fertiliser use, and billions of litres of water wasted to make new clothes. With combining the OCR app and Smart Mirror technology, NUEVA gives users a platform to buy and sell previously owned clothes while negating many of the unfavourable variables associated with thrifting. The app allows users to get a realistic representation of style and sizing of SHC using AR and virtual reality (VR) technology promoting reduction in the pollution caused from shipping returns and increasing users satisfaction. Most of the data collected from primary research suggested that the majority of users were motivated to buy SHC due to the environmental benefits and cost effectiveness validating NUEVAs ideology. Affordability appears to be driving the second-hand clothing trend, particularly now, during the COVID-19 economic crisis. Consumers are not only consuming less non-essential goods such as footwear, but they are also purchasing higher-quality garments rather than inexpensive, disposable clothing. The ability to search SHC using product descriptions, try on items using Smart Mirror extensions, and select pick-up options depending on your location revolutionises many of the challenges users reported with traditional thrifting methods. The Smart Mirror and Nueva work, not only to build a community around sustainable fashion, but use innovative technology to motivate user engagement mitigating much of the environmental devastation of the textile industry</p>
+    </div>
+    </div>
+    </div>
+<!-- End page content -->
+</div>
+    <img src="/nueva/stats.png" alt="Sandwich" style="max-width:2000px">
+    
+    <h1 class="w3-center" style="background-color:#88d2c3;" >one man's trash is another man's treasure</h1><br>
+     
+    <div class="w3-container w3-padding-64">
+
+<div class="w3-content" style="max-width:1000px; overflow-wrap: break-word;">
+    <h1 class="w3-center">References</h1><br>
+ <li class="w3-large">César Machado, J., Fonseca, B., and Martins, C. (2020). Brand logo and brand gender: Examining the effects of natural logo designs and color on brand gender perceptions and affect. Journal of Brand Management, 28(2), 152-170. doi:10.1057/s41262-020-00216-4</li>
+
+<li class="w3-large">CivicScience (2020). Most appealing characteristics for users in the United States to buy used apparel at re-sale sites as of February 2020 [Graph]. In Statista. Retrieved May 12, 2021, from https://www.statista.com/statistics/1104800/appealing-factors-for-online-users-buying-used-clothing/</li>
+
+<li class="w3-large">Den Blå Avis (2019). Which type of second-hand goods did you purchase within the last 12 months? [Graph]. In Statista. Retrieved May 12, 2021, from https://www.statista.com/statistics/794758/purchase-of-second-hand-goods-in-denmark-by-type-of-product/</li>
+
+<li class="w3-large">Field Marketing (2019). Selling clothes via fashion resale apps in the United Kingdom (UK) in 2019, by age group [Graph]. In Statista. Retrieved May 12, 2021, from https://www-statista-com.gold.idm.oclc.org/statistics/1184144/fashion-resale-apps-uk</li>
+
+<li class="w3-large">Gould, J. D., and Lewis, C. (1985). Editor Key Principles and What Designers Think. Communications of the ACM. Link: http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.84.8860&rep=rep1&type=pdf</li>
+
+<li class="w3-large">Gothelf, J. (2013). Lean UX: Applying Lean Principles to Improve User Experience. O’Reilly Media. ISBN: 1449311652.</li>
+
+<li class="w3-large">Harris Interactive (2020). Will you buy more, as much or less refurbished or second-hand clothing, footwear and accessories compared to last year? [Graph]. In Statista. Retrieved May 12, 2021, from https://www.statista.com/statistics/1195601/used-or-refurbished-clothing-footwear-accessories-christmas-shopping-intention-france/.</li>
+
+<li class="w3-large">Laubheimer, P. (2018). Beyond the NPS: Measuring Perceived Usability with the SUS, NASA-TLX, and the Single Ease Question After Tasks and Usability Tests. Nielsen Norman Group. Link: https://www.nngroup.com/articles/measuring-perceived-usability/.</li>
+
+<li class="w3-large">O'Connor, Z. (2010). Logo colour and DIFFERENTIATION: A new application of Environmental Colour mapping. Color Research and Application, 36(1), 55-60. doi:10.1002/col.20594.</li>
+
+<li class="w3-large">Sauro, J. and Dumas, J. (2009). Comparison of three one-question, post-task usability questionnaires. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI '09). Association for Computing Machinery, New York, NY, USA, 1599–1608. DOI: 10.1145/1518701.1518946.</li>
+
+<li class="w3-large">Sharp, H., Rogers, Y., and Preece, J. (2007). Interaction Design. Beyond Human-Computer Interaction. ISBN: 0470018666.</li>
+
+<li class="w3-large">Pollfish, Various sources (Site-annonce.fr) (2020). The second-hand products most purchased by the French in 2020 [Graph]. In Statista. Retrieved May 12, 2021, from https://www.statista.com/statistics/1178357/second-hand-most-purchased-products-type-france/</li>
+
+<li class="w3-large">Thredup (2019). Share of female consumers willing to buy secondhand apparel worldwide as of 2019, by age* [Graph]. In Statista. Retrieved May 12, 2021, from https://www.statista.com/statistics/828034/willingness-to-buy-secondhand-items-by-age-worldwide/</li>
+
+<li class="w3-large">Thredup (2020). Share of female consumers who bought secondhand apparel, footwear, or accessories worldwide as of 2020, by age* [Graph]. In Statista. Retrieved May 12, 2021, from https://www-statista-com.gold.idm.oclc.org/statistics/1008266/share-of-women-who-bought-secondhand-apparel-footwear-or-accessories-by-age-worldwide/</li>
+
+<li class="w3-large">Silva, S. C., Santos, A., Duarte, P., and Vlačić, B. (2021). The role of social embarrassment, sustainability, familiarity and perception of hygiene in second-hand clothing purchase experience. International Journal of Retail and Distribution Management. DOI: 10.1108/IJRDM-09-2020-0356.</li>
+<li class="w3-large">Yan, R.-N., Bae, S. Y., and Xu, H. (2015). Second-hand clothing shopping among college students: The role of psychographic characteristics. Young Consumers, 16(1), 85–98. DOI: 10.1108/YC-02-2014-00429.</li>
+
+<li class="w3-large">Yi, S., and Liu, X. (2020). Machine learning based customer sentiment analysis for recommending shoppers, shops based on customers’ review. Complex and Intelligent Systems, 6(3), 621–634. DOI: 10.1007/s40747-020-00155-2.</li>
+    </div>
+    </div>
+    
+ <!--  The Model-->
+     <div id="modal01" class="modal" onclick="this.style.display='none'">
+     <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+     <div class="modal-content w3-animate-zoom">
+     <img id="img01" style="width:100%">
+     <div id="caption"></div>
+     </div> 
+     </div>
+    
+    
+    
+    
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+    <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="dewdrop.html" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="dewdrop.html" class="w3-bar-item w3-hove-black w3-button">1</a>
+      <a href="nueva.html" class="w3-bar-item w3-button w3-black">2</a>
+      <a href="utopia.html" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="utopia.html" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+    <script>
+    //Model zoom script    
+
+function onClick(element) 
+{
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+
+    
+}
+ 
+ document.getElementById("homebutton").onclick = function () 
+{
+        location.href = "index.html";
+    };   
+document.getElementById("myButton").onclick = function () 
+{
+        location.href = "portfolio.html";
+    };
+</script>
+</html>

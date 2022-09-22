@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html ontouchmove >
+<title>Arza Sajid</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />    
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="honeycomb.css">
+    
+<style>
+body {font-family: "Karma", sans-serif; background-color: #000}
+
+h1 {
+  font-size: 220px;
+  font-family: "Playfair Display";
+}
+
+h2{
+   font-size: 30px;
+   font-family: "Karma", sans-serif
+}
+
+h3{
+   font-size: 20px;
+   font-family: "Karma", sans-serif
+}
+p{
+font-size: 14px;
+}
+    {
+  font-family: "Playfair Display";
+  font-family: "Karma", sans-serif
+  letter-spacing: 5px;
+    
+    }
+img {
+  width: 90%;
+  
+}
+
+div.d {
+  text-align: justify;
+}
+      input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: grey;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: dimgrey;
+}
+.container {
+  border-radius: 5px;
+  background-color: transparent
+  ;
+  padding: 20px;
+}
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+   .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+   .column {
+    width: 100%;
+}
+  
+
+
+
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+  <div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+  <a href="#home" class="w3-bar-item w3-button ">AS</a>
+      
+<!-- Right-sided navbar links. Hide them on small screens -->
+  <div class="w3-right w3-hide-small">
+  <a href="#about" class="w3-bar-item w3-button" >About Me</a>
+  <a href="#mywork" class="w3-bar-item w3-button">My Work</a>
+  <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+  </div>
+  </div>
+  </div>
+
+<!-- Header -->
+     <header id="home">
+     <div class="container">
+     <video id="myVideo" autoplay loop muted playsinline webkit-playsinline>
+     <source src="effect.mp4" type="video/mp4" controls= "false">
+     </video>
+     <div class="text-box">
+     <img src="aslogo3.png">
+     </div>
+     </div>
+     </header>
+<!--     <div class="w3-display-middle w3-center">-->
+     <span class=" w3-text-white  w3-display-middle w3-hide-small " style="font-size:6vw;">ARZA SAJID</span>
+<!--     </div>-->
+
+
+<!-- Page content -->
+  <div class="w3-content" style="max-width:1100px">
+
+<!-- About Section -->
+    <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+    <div data-aos="fade-right" data-aos-duration="3500">
+    <div data-aos="new-animation">
+    <img src="me1.gif" class="w3-round w3-image w3-opacity-min" alt="Table Setting" style="height:450px; max-height: 500px; max-width:336px; width: auto;">
+    </div>
+    </div>
+    </div>
+    <div class="w3-col m6 w3-padding-large">
+    <div data-aos="fade-left" data-aos-duration="3500"> 
+    <h2 class="w3-center w3-text-white">About Me</h2><br>
+    <h5 class="w3-center w3-text-white">Designer, Artist, and Coder </h5>  
+    <div class="d">    
+        <h5 class="w3-center w3-text-grey"><i>A creative soul with a love for codes and colors. </i></h5>  
+    <p class="w3-large" style="color:white;">I am a designer, artist, and coder currently living in London. My interests range from technology to arts. I am also interested in travel, design, and music. I love creating new products and experimenting with various techniques whether it be digital or traditional!
+    I believe that arts, design, and technology are the driving force of contemporary culture. I am interested in exploring these themes through my work. Yeah, that's about it.
+    </p>
+    <p class="w3-large w3-text-white w3-hide-medium"></p>
+   </div>
+   
+    </div>
+    </div>
+    </div>
+
+  
+<!-- Work Section -->
+    <div class="w3-padding-64" id="mywork">
+    <div class="w3-padding">
+    <h2 class="w3-center w3-text-white">Featured Work</h2><br> 
+    </div>
+    
+    <div class="padding-large">
+    <div data-aos="zoom-in" data-aos-duration="4000">  
+    <ul class="honeycomb">
+    <li class="honeycomb-cell">
+    <img class="honeycomb-cell_image" src="dd/logo.png">
+    <div class="honeycomb-cell_title" id="uxcs">UX Case Studies</div>
+    </li>    
+    <li class="honeycomb-cell">
+    <img class="honeycomb-cell_image" src="js/tbe.png">
+    <div class="honeycomb-cell_title" id="p5js">P5js<small>Javascript</small></div>
+    </li>
+    <li class="honeycomb-cell">
+    <img class="honeycomb-cell_image" src="mma/File%2012.jpg">
+    <div class="honeycomb-cell_title"id="mma">Illustrations</div>
+    </li>
+    <li class="honeycomb-cell">
+    <img class="honeycomb-cell_image" src="openframeworks/tw.png">
+    <div class="honeycomb-cell_title" id="openframeworks">C++<small>Openframeworks</small></div>
+    </li>
+    <li class="honeycomb-cell">
+    <img class="honeycomb-cell_image" src="mma/File%2052.png">
+    <div class="honeycomb-cell_title" id="mma1">3D<small>Scupltures</small></div>
+    </li>
+    <li class="honeycomb-cell">
+    <img class="honeycomb-cell_image" src="mma/File%2033.jpg">
+    <div class="honeycomb-cell_title" id="mma2">Water Colours</div>
+    </li>
+    <li class="honeycomb-cell">
+    <img class="honeycomb-cell_image" src="html/wp2.png">
+    <div class="honeycomb-cell_title" id="html" >HTMl/CSS</div>
+    </li>
+    <li class="honeycomb-cell honeycomb_placeholder">
+    </li>
+    </ul>
+    </div>
+    </div>
+    </div>
+  
+    
+
+      
+<hr style="height:2px;border-width:0;color:gray;background-color:black">
+
+      
+<!-- Contact Section -->
+  <div class="w3-padding">      
+  <div class=" w3-padding-64" id="contact"> 
+      <h2 class="w3-center w3-text-white">Contact Me</h2><br>  
+  <div class="container">
+        <form name="frmContact"  action="contactform.php" method="post"
+              enctype="multipart/form-data"
+            onsubmit="return validateContactForm()">
+
+            <div class="input-row">
+                <label style="color:white">Name</label> <span
+                    id="userName-info" class="info"></span><br /> <input
+                    type="text" name="userName"
+                    id="userName" placeholder="Your name" />
+            </div>
+            <div class="input-row">
+                <label style="color:white">Email</label> <span id="userEmail-info"
+                    class="info"></span><br /> <input type="text"
+                     name="userEmail" id="userEmail"   placeholder="Your email"/>
+            </div>
+            <div class="input-row">
+                <label style="color:white">Subject</label> <span id="subject-info"
+                    class="info"></span><br /> <input type="text"
+                     name="subject" id="subject"  placeholder="Subject" />
+            </div>
+            <div class="input-row">
+                <label style="color:white">Message</label> <span id="userMessage-info"
+                    class="info"></span><br />
+                <textarea name="content" id="content"
+                    cols="60" rows="6"  placeholder="Message"></textarea>
+            </div>
+            <div>
+                <input type="submit" name="send" class="btn-submit"
+                    value="Send" />
+
+                <div id="statusMessage"> 
+                        <?php
+                        if (! empty($message)) {
+                            ?>
+                            <p class='<?php echo $type; ?>Message'><?php echo $message; ?></p>
+                        <?php
+                        }
+                        ?>
+                    </div>
+            </div>
+        </form>
+    </div>
+  </div>
+      </div>
+<!-- End page content -->
+</div>
+
+
+<!-- Footer -->
+    <footer class="w3-center w3-light-grey w3-padding-16">
+    <div class="w3-container w3-padding-32 w3-center w3-text-white"> 
+    <h4>  
+    <a href="mailto:arzarttt@gmail.com"><i class="w3-center  fa fa-envelope" style="color:grey;padding-left:25px;"></i></a>
+    <a href="www.linkedin.com/in/arza-sajid-7577a6142"><i class="w3-center fa fa-linkedin" style="color:grey;padding-left:25px;"></i></a>   
+    <a href="https://www.instagram.com/arzartt_/"> <i class="w3-center fa fa-instagram" style="color:grey;padding-left:25px;"></i></a>   
+    <a href="/https://www.youtube.com/channel/UCdZzI_meKFyokK6f-vOdmSQ"><i class="w3-center fa fa-youtube" style="color:grey;padding-left:25px;"></i></a>
+    <a href="https://github.com/arza02"><i class="w3-center fa fa-github" style="color:grey;padding-left:25px;"></i></a> 
+    <a href="arzasajidCV.PDF"><i class="w3-center fa fa-file-text" style="color:grey;padding-left:25px;"></i></a>  
+    </h4>
+    <p class="w3-text-grey">&copy; 2022 arzasajid</p>
+    </div>
+    </footer>    
+
+</body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>    
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+    
+$( document ).ready(function() {
+
+Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
+    get: function () {
+        return !!(this.currentTime > 0 && !this.paused && !this.ended && this.readyState > 2);
+    }
+});
+$('body').on('click touchstart', function () {
+            const videoElement = document.getElementById('myVideo');
+            if (videoElement.playing) {
+                // video is already playing so do nothing
+            }
+            else {
+                // video is not playing
+                // so play video now
+                videoElement.play();
+            }
+    });
+});
+    
+AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 400, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+
+     document.getElementById("uxcs").onclick = function () 
+{
+        location.href = "portfolio.html#uxcasestudies";
+    };   
+    
+    document.getElementById("openframeworks").onclick = function () 
+{
+        location.href = "portfolio.html#openframeworks";
+    };
+    document.getElementById("p5js").onclick = function () 
+{
+        location.href = "portfolio.html#javascript";
+    };
+document.getElementById("html").onclick = function () 
+{
+        location.href = "portfolio.html#html";
+ };
+
+document.getElementById("mma").onclick = function () 
+{
+        location.href = "portfolio.html#mixedmedia";
+ };
+    document.getElementById("mma1").onclick = function () 
+{
+        location.href = "portfolio.html#mixedmedia";
+ };
+    document.getElementById("mma2").onclick = function () 
+{
+        location.href = "portfolio.html#mixedmedia";
+ };
+    
+    function validateContactForm() {
+            var valid = true;
+
+            $(".info").html("");
+            $(".input-field").css('border', '#e0dfdf 1px solid');
+            var userName = $("#userName").val();
+            var userEmail = $("#userEmail").val();
+            var subject = $("#subject").val();
+            var content = $("#content").val();
+            
+            if (userName == "") {
+                $("#userName-info").html("Required.");
+                $("#userName").css('border', '#e66262 1px solid');
+                valid = false;
+            }
+            if (userEmail == "") {
+                $("#userEmail-info").html("Required.");
+                $("#userEmail").css('border', '#e66262 1px solid');
+                valid = false;
+            }
+            if (!userEmail.match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/))
+            {
+                $("#userEmail-info").html("Invalid Email Address.");
+                $("#userEmail").css('border', '#e66262 1px solid');
+                valid = false;
+            }
+
+            if (subject == "") {
+                $("#subject-info").html("Required.");
+                $("#subject").css('border', '#e66262 1px solid');
+                valid = false;
+            }
+            if (content == "") {
+                $("#userMessage-info").html("Required.");
+                $("#content").css('border', '#e66262 1px solid');
+                valid = false;
+            }
+            return valid;
+        }
+</script>
+</html>

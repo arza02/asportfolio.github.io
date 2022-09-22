@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+<title>arzasajid</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" type="text/css" href="model.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+   text-align: justify;
+  text-justify: inter-word;
+}
+    
+    video {
+  width: 100%;
+  height: auto;
+}
+    img {
+  width: 100%;
+  height: auto;
+}
+   table, th, td {
+ border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  background-color: rgba(127, 183, 218, 0.5);
+}
+    .row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+    
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+    
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+  
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button w3-hide-small">Dewdrop</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right ">
+      <a class="w3-bar-item w3-button" id="homebutton">Home</a>
+      <a class="w3-bar-item w3-button" id="myButton">Portfolio</a>
+    </div>
+  </div>
+</div>
+
+
+ <div class="w3-content" style="max-width:2000px;margin-top:46px">
+ <!-- Header with image -->
+ <header class="bgimg w3-display-container w3-grayscale-min" id="home">   
+ <img src="dd/logo.png" style="width:100%">
+     <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge w3-hide-small">Smart Water Bottle</h1>
+    <ul style="list-style-type:none;" class="w3-hide-small">
+    <li>Obuchi Adikema</li>
+    <li> Sean Kennedy</li>
+    <li>Arza Sajid</li>
+    <li>Eliza Szilagyi</li>
+    </ul>
+
+ </div>
+ </header>
+   
+    </div>
+<!-- Page con
+
+<!-- Page content -->
+   <div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+    <div class="w3-container w3-padding-64" id="contact">
+    <div class="w3-col m6 w3-padding-large">
+    <img src="/dd/floatingbottle" class="w3-round w3-image" alt="Table Setting" width="600" height="750">
+    </div>
+    <div class="w3-col m6 w3-padding-large">
+    <h1 class="w3-center" style="background-color:#7fb7da;">Introducing The DewDrop Bottle</h1><br>
+    <p class="w3-large">Historically, the interaction between water bottles and their humans has remained relatively simple. The user opens the bottle, drinks the water, then puts the bottle away. When the first plastic water bottle was patented in 1973, the step of recycling or disposing the bottle was added.<span class="w3-tag w3-light-grey">Water bottles hold water, but what if they could be doing more?</span></p>
+    <p class="w3-large">At DewDrop, we are in the process of developing a water bottle that alerts users when they have not had enough water to drink. With The DewDrop Bottle, users can meet their hydration goals and keep track of their drinking habits. The age demographic we are currently aiming for is 25 – 40 years old, however that doesn’t mean other age groups won’t fall into it too. This was a university group project where I worked myself with 3 other people (Eliza Szilagyi, Sean Kennedy and Obuchi Adikema). For this project I was in charge of the high fidelity prototype, research and brochure designing and editing.</p>
+    </div>
+    </div>
+  
+  <hr>
+  
+<!-- Surveys -->
+      <div class="w3-container w3-padding-64">   
+      <div class="w3-row w3-padding-64" >
+      <h1 class="w3-center" style="background-color:#7fb7da;">Surveys</h1><br>
+      <p class="w3-large">We researched the existing products as well as made a survey to analyse who will be interested in using our product. We had ten questions that were basic questions which helped us analyse the age group of people who took part in the survey and how many of these people forget to drink during the day. The questions also included how people like to be reminded e.g. through sound, light or visual alerts and 57% of the people chose sound. The data collected from the survey helped us in finalising the final product. The survey we used showed us that 57% of people wanted to be alerted through sound. 41% number of people wanted light reminders. 87% number thought that they would like to be reminded to drink water.</p>
+      <p class="w3-large">The survey not only confirmed that a smart water bottle that reminds users to drink water is a viable idea, but one that could truly improve people’s lives. This confirmed and set the requirements appended below by providing data that confirmed or denied our own thoughts about what would be important additions to the water bottle. We had specifically designed questions around our ideas of how people would want to be alerted, and who we thought would be interested in the water bottle, and to see those assumptions reflected back in the data was encouraging to us. The next step was to take these requirements and turn them into an actual design.</p>
+      <div class="w3-row-padding w3-padding-16 w3-center">
+      <div class="w3-third">   
+      <img src="dd/survey.png" alt="Popsicle" style="width:100%"  onclick="onClick(this)">
+      <p>Figure.A</p>
+      </div>
+      <div class="w3-third">
+      <img src="/dd/survey2.png" alt="Salmon" style="width:100%"  onclick="onClick(this)">
+      <p>Figure.B</p>
+      </div>
+      <div class="w3-third">
+      <img src="/dd/survey3.png" alt="Sandwich" style="width:100%"  onclick="onClick(this)">
+      <p>Figure.C</p>
+      </div>
+      </div>
+      </div>
+      </div>
+
+  <hr>
+    
+<!--Existing products-->
+   
+      <div class="w3-container w3-padding-64">
+      <div class="w3-row w3-padding-64">
+      <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center" style="background-color:#7fb7da;">Existing Products</h1><br>
+      <p class="w3-large">After looking around, we discovered that there is quite a lot , however they all fail when it comes to functionality.Most of them have a set target of people such as 30+ very active people. Which can be good or bad, bad because is limiting and good because they know who to cater around. Our water bottle will be a mix of both worlds.
+      <p class="w3-large">Most of them also depend on an app, either on Android or IOS, or strictly only on IOS ( as seen below ), this is something we are trying to avoid, since in order to fully use the bottle you need to carry your phone and the bottle, which most companies think that’s what we already do, however that is wrong, what if you go hiking and feel the need to disconnect from the internet you will only need to carry the water bottle since it will be completely stand alone.</p> 
+      <p class="w3-large">Most of them are also very expensive, starting from 60£, also the materials they use are mostly plastic, therefore spending 60£+ on a plastic bottle is not what we personally would invest it. Our water bottle will be made out of metal to avoid this issue. We want to invest in a better, cleaner and brighter future.</p><p><span class="w3-tag w3-light-grey">Some examples of already existing water bottles:</span></p>
+      </div>
+      <div class="w3-col m6 w3-padding-large">
+      <img src="/dd/ep.png" class="w3-round w3-image" alt="Table Setting" width="600" height="750">
+      </div>
+    
+      <table style="width:100%">
+      <tr>
+      <th>Bellabeat Spring</th>
+      <th>H2Opa</th>
+      <th>Hidrate Spark 3.0</th>
+      <th>CloudCUP</th>
+      </tr>
+      <tr>
+      <td>Price: £70</td>
+      <td>Price: £99</td>
+      <td>Price: £57</td>
+      <td>Price: £67</td>
+      </tr>
+      <tr>
+      <td>It uses an app on your phone which will regularly send you notifications of how much water you need to drink or you can use it to track your daily progress.Not standalone.The app has a difficult interface. We like the design.</td>
+      <td>It also depends on an app.  ( not stand alone )The interface is quite difficult to understand.Is limited to IOS, therefore is obvious which demographic they are targeting.Very expensive.</td>
+      <td>It also uses an app to track your progress, making the bottle almost have no functionality, when for example you forgot your phone at home.Uses a lot of plastic ( bad for the environment )We like the simplistic interface.</td>
+      <td>You can write here as much as The interface can be challenging for new users.Very heavy, the metal of the bottom of the water weights a lot + when fully filled is not practical.We like the clear design they went for, it looks simple but good..</td>
+      </tr>
+      </table>
+      </div>
+      </div>
+      <hr>
+       
+<!--    Personas-->
+      <div class="w3-container w3-padding-64"> 
+      <div class="w3-row w3-padding-64">
+      <div class="w3-padding-large">
+      <h1 class="w3-center" style="background-color:#7fb7da;">Personas</h1><br>
+      <p class="w3-large">We came up with 4 personas, in order to discuss potential benefits of our product and also potential flaws and improvements we need to make.</p>
+      </div>
+        
+    
+      <table style="width:100%">
+      <tr>
+      <th>Mary (23 years old)</th>
+      <th>Jonathan (41 years old)</th>
+      <th>Katie (16 years old)</th>
+      <th>Paul ( 65 years old )</th>
+      </tr>
+      <tr>
+      <td>
+      <li>Works in accounting.</li>
+      <li>Fairly active.</li>
+      <li>Loves to go hiking.</li>
+      <li>Always up to date whenever new tech appears.</li>
+      </td>
+    
+      <td>
+      <li>Stay at home dad ( has 3 kids between the ages 2- 7)</li>
+      <li>His hobby is music (musician)</li>
+      <li>Loves to cycle when the kids are sleeping or are at school.</li>
+      </td>
+    
+      <td>
+      <li>Highschool student</li>
+      <li>Skips exercise</li>
+      <li>Loves to be trendy and up to date with everything that happens online.</li>
+      <li>Loves to eat junk food</li>
+      <li>She spends almost all her time on Instagram</li>
+      </td>
+    
+      <td>
+      <li>Works as a lecturer in a university.</li>
+      <li>Fairly new to technology (his kids gifted him his first iPhone)</li>
+      <li>Loves to walk his dog</li>
+      <li>spends time in coffee shops</li>
+      <li>Literature Specialty</li>
+      <li>Has joint pains.</li>
+    
+      </td>
+      </tr>
+      <th>Why would Mary use our smart water bottle?</th>
+      <th>Why would Jonathan use our smart water bottle?)</th>
+      <th>Why would Katie use our smart water bottle?</th>
+      <th>Why would Paul use our smart water bottle?</th>
+      <tr>
+      <td>
+      <li>Hot office</li>
+      <li>Weight Loss</li>
+      <li>Forgets to drink water ( busy life )</li>
+      <li>When hiking she always takes a water bottle with her.</li>
+      <li>She can keep it on her desk so she will always see it.</li>
+      <li>Durable and lightweight</li>
+      </td>
+      <td>
+      <li>Can afford it. (So, makes enough money to allow him to stay at home)</li>
+      <li>“Why not?” mentality (saw an ad that got his attention)Busy life.</li>
+      <li>He would keep it in on his kitchen counter</li>
+      <li>His kids would love to see the water bottle light up.</li>
+      </td>
+      <td>
+      <li>Because its trendy, lots of people are posting promotions online</li>
+      <li>Healthier skin, weight loss and etc.</li>
+      <li>She saw an ad on Instagram.</li>
+      <li>She would keep it on her desk and carry it around with her</li>
+      </td>
+      <td>
+      <li>Doctor suggested (told to drink a certain amount in a day to help with his joint pain)</li>
+      <li>Is concerned about prolonging life, and having a better life style. drinks too much coffee and tea and not enough water</li>
+      </td>
+      </tr>
+      </table>
+            </div>
+      </div>
+      <hr>
+       
+<!-- Paper protoytyping testing -->
+      <div class="w3-container w3-padding-64" >
+      <div class="w3-row w3-padding-64" >
+      <h1 class="w3-center" style="background-color:#7fb7da;">Paper Testing Prototype</h1><br> 
+      <div class="w3-row-padding w3-padding-16 w3-center">
+      <div class="w3-third">   
+      <img src="dd/d1.png" alt="Popsicle" style="width:100%"  onclick="onClick(this)">
+      <h3 class=" w3-center">Design 1</h3>
+      </div>
+      <div class="w3-third">
+      <img src="/dd/d2.png" alt="Salmon" style="width:100%"  onclick="onClick(this)">
+      <h3 class=" w3-center">Design 2</h3>
+      </div>
+      <div class="w3-third">
+      <img src="/dd/d3.png" alt="Sandwich" style="width:100%"  onclick="onClick(this)">
+      <h3 class=" w3-center">Design 3</h3>
+      </div>
+      </div>
+      
+      
+      <p class="w3-large">Final design was between 2 and 3. Since they showed better results overall when testing.In our testing, we saw that design 1 had too much clutter on screen, and it was easy for people to get confused or overwhelmed, though the interaction required less steps. The other two designs are more stylish, allowing for not only a greater marketability, but also a deliverance of information which is accessible and streamlined.</p>
+      <p class="w3-large">The first design was all on one screen, divided into three parts. This allowed for less steps in the interaction, because everything you would want to do is easily accessible. However, it suffered from having too much information on screen, and was not very aesthetically pleasing. Furthermore, there is an excess of information, such as how many bottles in the user is.</p>
+      <p class="w3-large">The second design utilised a watch face and different menu states in order to streamline the information throughput, but suffered from too many steps to figure out how to solve a simple problem. With a ‘home’ state and a ‘settings’ state, it may be confusing to figure out where something is stored. Furthermore, if someone, for example, forgot to silence the notification and it went off, it takes more steps to shut it off on this design than on others. While this did follow the design vernacular of similar smart devices and iOS and Android interfaces, it does have complications that are worthy of consideration when devising a more high fidelity prototype.</p>
+      <p class="w3-large">The third design employs a more minimal aesthetic, and more clearly communicates the different uses necessary. This system does not have a clock displayed, rather using a large face which represents the user’s hydration. The face becomes sad when it is time for the user to drink. While the face appears on the other designs, giving it a more foregrounded setting allows for a more personal connection to the experience, an object of empathy to latch onto. While this design also utilises menu states, which adds more steps.</p>
+      <p class="w3-large">After testing the paper prototypes, what we discovered is that there is a need from all three to give better feedback on the number of reminders. This can be achieved with a distinct confirmation animation that affirms the number of reminders set. Furthermore, our testing uncovered a desire to set the reminders over a longer course, rather than daily. This can achieved easily by resetting the number of reminders at the beginning of each day automatically, and if someone feels they want them changed, just doing that. This is similar to how phone alarms can work, where they set themselves everyday so that you do not have to think about it. On top of that, there was a desire to know how many bottles of water someone has had in a day so far, and perhaps applying some sort of incentive to achieving the correct number. Even if the person takes small sips of water, the number of bottles will hold them accountable to about how much they have taken in. Another idea pitched was for the reminders not to be the total number for the day, but rather the time interval between reminders, ranging from 5 minutes to 2 hours. People do not really think about being reminded to drink water in terms of the cumulative times in a day.</p>
+      </div>
+      </div>
+
+  <hr>
+<!--UI Sketches-->
+   <div class="w3-container w3-padding-64">
+    <div class="w3-row w3-padding-64">
+    <div class="w3-col m6 w3-padding-large">
+    <img src="/dd/ui.jpeg" class="w3-round w3-image" alt="Table Setting" width="600" height="750">
+    </div>
+    <div class="w3-col m6 w3-padding-large">
+    <h1 class="w3-center" style="background-color:#7fb7da;">UI Sketches</h1><br>
+    <ol>
+    <li><p class="w3-large">Visual reminders such as text messages on the screen whenever there is a need for them</p> </li>
+    <li> <p class="w3-large">Audio reminders such as a beeping sound for about 5 times whenever the user needs to take a sip of wate.</p></li>
+    <li><p class="w3-large"> Light reminders such as the light blinking on and off 10 times whenever the user needs to take a sip of water.</p></li>
+    </ol> 
+    </div>
+    </div>
+    </div>
+<!-- Water Bottle Prototype-->
+    <div class="w3-container w3-padding-64" id="contact">
+    <div class="w3-row w3-padding-64" id="menu">
+    <h1 class="w3-center" style="background-color:#7fb7da;">Water Bottle Prototype</h1><br>
+    <img src="/dd/p1.jpeg" alt="Sandwich" style="width:100%">
+    </div>
+    </div>
+<!-- Logo Variations-->
+    <div class="w3-container w3-padding-64" id="contact">
+    <div class="w3-row w3-padding-64" id="menu">
+    <h1 class="w3-center" style="background-color:#7fb7da;">Logo Designs</h1><br>
+    <img src="/dd/comlogo.jpeg" alt="Sandwich" style="width:100%">
+    <img src="/dd/logo.png" alt="Sandwich" style="width:100%">
+    </div>
+    </div>
+<!-- Implementation & Design-->
+      <div class="w3-container w3-padding-64" id="contact">
+      <div class="w3-row w3-padding-64" id="menu">
+      <h1 class="w3-center" style="background-color:#7fb7da;">Implementation and Design</h1><br>
+      <p class="w3-large">We decided that the best way to achieve our goal of making hydration simple and thoughtless was to design a smart water bottle. As a thought experiment, we also considered kiosks, fountains, and wearable, but these ideas were quickly scrapped for not being practical. The water bottle’s first design was a complete bottle, with technology implemented throughout. As can be seen in Figure 2, the bottle was to have a cap that opened to reveal a straw, a battery on the bottom, and a glowing drop LED in the middle. The cap was going to double as a knob which the user would twist in order to interact with the system.</p>
+      <p class="w3-large">This initial design was then put through a cognitive walkthrough. In running through our persona of Paul, a65-year-old university professor who does not use technology much, we discovered that he may not realise that the cap is a knob, and wonder why he can’t unscrew the bottle sometimes, or accidentally do so when turning the knob. We also figured that the battery would need a complex locking mechanism to make sure it stays fastened to the bottom of the bottle and does not fall off easily, which then would make it complicated to change out. We also realized he may try touching the screen first, which may be frustrating when nofeedback to that touch is given. While the initial design was stylish, we needed something that would go beyond style to deliver a truly unique product.</p>
+      <p class="w3-large">Informed by this, we decided on our next design, which put all of the technology into the cap, making it something that can be transferred from bottle to bottle to solve the issue of uniqueness. This cap was going to be touch screen, so that there would be no confusion with using the knob, and would maintain the features of reminding users to drink water through light and sound. When we did a cognitive walkthrough on this idea, we found it was much more approachable, and that personas like Jonathan, a 41-year-old stay at home dad, would appreciate the versatility of using the smart cap on different bottles. The next challenge was the UI of the cap.</p>
+       <p class="w3-large">We came up with three different paper prototypes trying to test different ideas of what the interface on the cap should be. The first design was all on one screen, divided into three parts. This allowed for fewer steps in the interaction, because everything you would want to do is easily accessible. However, it had too much information on a small screen, hence hard to read. The second utilized a watch face and different menu states in order to streamline the information throughput, but suffered from having too many steps to figure out how to solve a simple problem, as well as an unnecessary watch face, since users we tested this design on did not think to look to their water bottle to know what time it was. The third design employed a more minimal/simple aesthetic. This system had large emoji which represented the user's hydration. The emoji became sad when it was time for the user to drink. While the face appeared on the other designs, giving it a more foregrounded setting allowed for a more personal connection to the experience, an object of empathy to latch onto.</p>
+      <p class="w3-large">These designs were tested through a think-aloud process where the users interacted with these paper prototypes and explained their thoughts as they used them. The previously stated criticisms of each design were the direct result of this process. This allowed us to combine the different prototypes into one fourth design that we ended up using for the final prototype. This process also enlightened us to a variety of features to be added that we had not thought of, such as tracking how much water has been drank throughout the day, and setting an interval of time between reminders to take a sip. This final design had one main page which would be used to alert users when it was time to take a sip of water. Also displayed were the current means of making that reminder, whether it be light, sound, both, or neither. We discovered that users of the paper prototype wanted to know what settings were currently on so that they would not accidentally have the bottle be disruptive, and so those things were prominently displayed on the main page. Furthermore, the settings page, accessed by swiping up, was changed to allow for the interval of time between sips of water to be taken,rather than the number of reminders throughout the day, as people did not know how many sips they should take or how many they wanted to take. Finally, we added a functionality to track the amount of water that had been drank that day, as per suggestion from users who wanted a way to track their hydration progress. This final design was paper prototyped and tested again with a think aloud process, and users responded well to the new system. From there, Eliza put together a 3D model, and we had our final design.</p>
+      <p class="w3-large"></p>
+      <div class="w3-row-padding w3-padding-16 w3-center">
+      <div class="w3-third">   
+      <img src="dd/1.png" alt="Popsicle" style="width:100%"  onclick="onClick(this)">
+      <h3>Home Page</h3>
+      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      </div>
+      <div class="w3-third">
+      <img src="/dd/2.png" alt="Salmon" style="width:100%"  onclick="onClick(this)">
+      <h3>Settings Page</h3>
+      <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      </div>
+      <div class="w3-third">
+      <img src="/dd/b3.png" alt="Sandwich" style="width:100%"  onclick="onClick(this)">
+      <h3>Bottle</h3>
+      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      </div>
+      </div>
+      </div>
+      </div>
+    
+<!--Brochure -->
+      <div class="w3-container w3-padding-64">
+      <div class="w3-row w3-padding-64" >
+      <h1 class="w3-center" style="background-color:#7fb7da;">Brochure Design</h1><br>
+      <img src="/dd/brochure.jpeg" alt="Sandwich" style="width:100%"  >
+      <img src="/dd/brochure2.jpeg" alt="Sandwich" style="width:100%" >
+      </div>
+      </div>
+       
+<!--Evaluation-->
+      <div class="w3-container w3-padding-64">
+      <div class="w3-row w3-padding-64">
+      <h1 class="w3-center" style="background-color:#7fb7da;">Evaluation</h1><br>
+      <p class="w3-large">Our design was catered around the requirements; therefore, it went through various stages, in order to get to where is at the moment: The water bottle will alert the user if they haven’t drunk enough water. In the requirements we mentioned that there must be three types of alerts: audio, visual and text, which where all successfully implemented into the final design. The water bottle is able to show the user how much water they had that day by interacting with it, this was also one of the requirements mentioned, and this is also successfully implemented into the final design. After a lot of testing we concluded is one of the main features some people would love to make use of. Lastly the water bottle offers a simple and straightforward UI, which we tried our best to make it accessible for a wide range of users not only experts. Since the bottle cap is standalone, it had to be simple enough for the average consumer yet give all the information they would need; this is something we successfully implemented into our final design.</p>
+      <p class="w3-large">Some things that didn’t make the cut are as follows: The homepage was supposed to be a smiley face in the beginning. The reason why this didn’t make it into the final design is because it was doing more damage than good. Imagine waking up at an angry face, you would be confused, therefore is just not something we wanted our image to be, hence why we chose to use text as a reminder to drink more water. We also ended up not adding a “statistics page”. It would have made the water bottle sound like some science experiment, which is the opposite of what we wanted. We wanted to make the users feel welcomed to check how much water they had that day, not check their statistics.</p>
+      
+      <video controls>
+      <source src="dd/DewDrop.mp4">
+      </video>
+
+      </div>
+      </div>
+       
+<!--Conclusion-->
+     <div class="w3-container w3-padding-64">
+    <div class="w3-col m6 w3-padding-large">
+    <img src="/dd/finallogo.jpg" class="w3-round w3-image" alt="Table Setting" width="600" height="750">
+    </div>
+    <div class="w3-col m6 w3-padding-large">
+    <h1 class="w3-center" style="background-color:#7fb7da;">Conclusion</h1><br>
+    <p class="w3-large">Our final product is the design of a smart water bottle that will help users remember to drink more water, and we followed an iterative design process to create it. We started by following the “jobs to be done” approach and set out to design a process that would help people stay hydrated and healthy. We gathered data on the current barriers that keep people from drinking more water through providing surveys to the people around us and conducting online research. Then we focused on a reoccurring problem: people forget to drink their water. By developing personas and requirements and continually coming back to test our designs against them, we ensured that our solution would be acceptable to a wide range of users. We produced multiple paper prototypes, informed by the needs of our personas and tested them using a variety of techniques. Then we made changes informed by these tests. Although we will not be sending our final design into mass production to be marketed for retail stores anytime soon, we are confident that our product would be successful in meeting the needs of our target audiences because of the continuous research, testing, and evaluation that we have adhered to throughout our design process.</p>
+    </div>
+    </div>
+       
+       
+<!-- End page content -->
+</div>
+    
+    
+    <img src="/dd/stats.png" alt="Sandwich" style="max-width:2000px">
+    
+    <h1 class="w3-center" style="background-color:#7fb7da;">For people who dont drink water</h1><br>
+    
+ <!--  The Model-->
+     <div id="modal01" class="modal" onclick="this.style.display='none'">
+     <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+     <div class="modal-content w3-animate-zoom">
+     <img id="img01" style="width:100%">
+     <div id="caption"></div>
+     </div> 
+     </div>
+    
+    
+    
+    
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+   <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="dewdrop.html" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="nueva.html" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="utopia.html" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="nueva.html" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+    <script>
+    //Model zoom script    
+
+function onClick(element) 
+{
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+
+    
+}
+ 
+ document.getElementById("homebutton").onclick = function () 
+{
+        location.href = "index.html";
+    };   
+document.getElementById("myButton").onclick = function () 
+{
+        location.href = "portfolio.html";
+    };
+</script>
+</html>
